@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishGuard - Dynamic Detector</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🛡️ PhishGuard</h1>
+        <p>Dynamic Phishing URL Detector</p>
+      </header>
+
+      <main>
+        <div class="input-section">
+          <input
+            type="text"
+            id="urlInput"
+            placeholder="Enter a URL to check..."
+          />
+          <button id="checkButton">Check URL</button>
+        </div>
+
+        <div id="resultContainer" class="result-container">
+          <!-- Spinner will be shown/hidden with JS -->
+          <div class="spinner" id="loadingSpinner" style="display: none"></div>
+
+          <div class="placeholder" id="placeholderText">
+            <p>
+              Enter a URL to check its safety against a live threat database.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
